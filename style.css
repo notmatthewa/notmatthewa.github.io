@@ -11,6 +11,9 @@ body{
     margin: 0px;
     padding: 0px;
 }
+.Main-Page-Container{
+    min-height: 100%;
+}
 .Navigation{
     background-color: var(--minor-color-1);
     padding-bottom: 0.5vw;
@@ -55,6 +58,34 @@ body{
     width: 100vw;
     padding: 1.5vw;
     font-size: 5.5vh;
+    color: var(--secondary-color);
+    font-family: 'Barlow', sans-serif;
+}
+.Sidebar-Order-Item{
+    border-top: 1px solid black;
+    font-size: 3vh;
+    color: var(--secondary-color);
+    font-family: 'Barlow', sans-serif;
+}
+.Sidebar-Order-Item:last-child{
+    border-bottom: 1px solid black !important; 
+}
+.Sidebar-Order-Item-Title{
+    width: 84%;
+    display: inline-block;
+    padding-left: 2vw;
+}
+.Sidebar-Order-Item-Count input{
+    width: 5vw;
+    margin-right: 2vw;
+    border: 1px solid black;
+    text-align: center;
+    float: right;
+    background-color: var(--primary-color);
+    font-family: 'Barlow', sans-serif;
+}
+.Sidebar-Order-Item-Count{
+    display: inline-block
 }
 @keyframes SidebarAnimation-Open {
     from {right: -66.66666vw;}
