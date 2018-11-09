@@ -1,0 +1,67 @@
+:root {
+    --primary-color: #ffffdd;
+    --secondary-color: #d1a35e;
+    --minor-color-1: #9f6e33;
+    --minor-color-2: #a73741;
+    --minor-color-3: #8a0016;
+}
+
+body{
+    background-color: var(--primary-color);
+    margin: 0px;
+    padding: 0px;
+}
+.Navigation{
+    background-color: var(--minor-color-1);
+    padding-bottom: 0.5vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    box-shadow: 0px 3px 15px #888888;
+}
+.Navigation-Title{
+    color: var(--secondary-color);
+    font-family: 'Barlow', sans-serif;
+    font-size: 6vh;
+    display: inline-block;
+}
+.Navigation-Menu{
+    float: right;
+    font-size: 5.5vh;
+    color: var(--secondary-color);
+    padding: 0px;
+}
+.Navigation-Menu:active{
+    filter: brightness(85%);
+}
+.Sidebar{
+    width: 66.6666vw;
+    background-color: var(--minor-color-1);
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    right: -66.6666666vw;
+}
+.Enabled-Sidebar{   
+    animation-name: SidebarAnimation-Open;
+    animation-duration: 0.5s;
+    right: 0px;
+    box-shadow: 0px 0px 10px black;
+}
+.Disabled-Sidebar{
+    animation-name: SidebarAnimation-Close;
+    animation-duration: 0.5s;
+}
+.Sidebar-Title{
+    width: 100vw;
+    padding: 1.5vw;
+    font-size: 5.5vh;
+}
+@keyframes SidebarAnimation-Open {
+    from {right: -66.66666vw;}
+    to {right: 0px;}
+}
+@keyframes SidebarAnimation-Close {
+    0% {right: 0px; box-shadow: 0px 0px 10px black;}
+    99% {box-shadow: 0px 0px 10px black;}
+    100% {right: -66.66666vw;}
+}
