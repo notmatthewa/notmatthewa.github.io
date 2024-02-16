@@ -25,7 +25,7 @@ const data = {
         data: [
         ], // y values
         fill: false,
-        borderColor: 'rgb(75, 192, 192)',
+        borderColor: 'rgba(75, 192, 192, 0.6)',
         tension: 0.3
     },
     {
@@ -49,7 +49,7 @@ const data1 = {
         data: [
         ], // y values
         fill: false,
-        borderColor: 'rgb(75, 192, 192)',
+        borderColor: 'rgba(75, 192, 192, 0.6)',
         tension: 0.3
     },
     {
@@ -81,7 +81,7 @@ const data2 = {
         data: [
         ], // y values
         fill: false,
-        borderColor: 'rgb(75, 192, 192)',
+        borderColor: 'rgba(75, 192, 192, 0.6)',
         tension: 0.3
     }]
 };
